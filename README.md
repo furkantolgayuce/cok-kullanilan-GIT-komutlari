@@ -24,7 +24,7 @@ git remote add origin [link]
 
 **Değişikliklerin ardından ilk push komutunu kullanırken:**
 
-* `git push` yerine `git push origin master` komutunu kullanmalıyız.
+* `git push` yapmadan önce `git config --add push.default current` komutunu kullanmalıyız.
 
 ## Push
 
