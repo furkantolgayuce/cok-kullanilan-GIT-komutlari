@@ -12,13 +12,19 @@ git clone [link]
 
 ## Remote
 
-Uzakta repo açıp yereldeki klasörle birleştirmek için kullanacağımız komut:
+Uzakta repo açıp yereldeki klasörle birleştirmek için kullanacağımız komutlar:
+
+* Eğer yereldeki klasörde bir .git dosyası yok ise:
+  * `git init`
+* Ardından iki repoyu birleştirmek için
 
 ```
 git remote add origin [link]
 ```
 
+**Değişikliklerin ardından ilk push komutunu kullanırken:**
 
+* `git push` yerine `git push origin master` komutunu kullanmalıyız.
 
 ## Push
 
