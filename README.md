@@ -1,4 +1,4 @@
-# Git Komutları
+# Çok Kullanılan Git Komutları
 
 ## Clone
 
@@ -24,7 +24,7 @@ git remote add origin [link]
 
 **Değişikliklerin ardından ilk push komutunu kullanırken:**
 
-* `git push` yapmadan önce `git config --add push.default current` komutunu kullanmalıyız.
+* `git push --set-upstream origin master -f` komutunu kullanmalıyız.
 
 ## Push
 
@@ -69,3 +69,8 @@ Eğer daha öncesinde yerelde değişiklik yaptıysak hata verecektir. Yaptığ�
 git stash
 ```
 
+## Branch Eklemek
+
+Yeni branch oluşturmak için.
+
+`git checkout -b [isim]`
