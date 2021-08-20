@@ -8,8 +8,6 @@ Uzaktayi projeyi clonelamak için vereceğimiz komut:
 git clone [link]
 ```
 
-
-
 ## Remote
 
 Uzakta repo açıp yereldeki klasörle birleştirmek için kullanacağımız komutlar:
@@ -43,8 +41,6 @@ git commit -m "Yorum"
 git push
 ```
 
-
-
 ## Pull
 
 Uzaktaki repodaki değişiklikleri almak isterken kullanacağımız komutlar:
@@ -58,9 +54,6 @@ Uzaktaki repodaki değişiklikleri almak isterken kullanacağımız komutlar:
 git fetch --all
 git pull
 ```
-
-
-
 Eğer daha öncesinde yerelde değişiklik yaptıysak hata verecektir. Yaptığımız değişiklikleri yok saymak için:
 
 **Kullanırken dikkat edin yaptığınız değişiklikleri silecektir.**
@@ -70,10 +63,15 @@ git stash
 ```
 
 ## Branch Eklemek
+Yeni branch oluşturur ve mevcut branch'da kalır.
+`git branch [isim]`
 
-Yeni branch oluşturmak için.
-
+Yeni branch oluşturur ve o branch'a geçiş yapar.
 `git checkout -b [isim]`
+
+## Branch değiştirir
+Branch değiştirmek için
+`git checkout [geçiş yapacağın branch adı]`
 
 ## Commit Seçenekleri
 Son commit'in adını değiştirmek veya son değişiklikleri onun içerisine eklemek için
@@ -86,15 +84,18 @@ Sadece son commit'in adını değiştirmek istersek ise
 ## Revert
 Yaptığımız değişikliği geri almak için kullanabiliriz. Ama yapılan değişikliği de bir adım olarak ekler.
 
-`git revert geri-alacağımız-commit-idsi`
+`git revert [geri-alacağımız-commit-idsi]`
 
 ## Reset Hard
 Yaptığımız değişikliği silerek geri almak için kullanılır. Revert çok daha güvenli reset kullanıldığı zaman commitler silinir.
 
-`git reset --hard gitmek-istediğiniz-commit-idsi`
+`git reset --hard [gitmek-istediğiniz-commit-idsi]`
 
 ## İki commit arasındaki fark
 İki commit arasındaki farkı görmek için
 
-`git diff birinci-commitid...ikinci-commitid`
+`git diff [birinci-commitid]...[ikinci-commitid]`
+
+
+
 
