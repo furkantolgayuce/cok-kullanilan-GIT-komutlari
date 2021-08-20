@@ -74,3 +74,27 @@ git stash
 Yeni branch oluşturmak için.
 
 `git checkout -b [isim]`
+
+## Commit Seçenekleri
+Son commit'in adını değiştirmek veya son değişiklikleri onun içerisine eklemek için
+
+`git commit --amend`
+
+Sadece son commit'in adını değiştirmek istersek ise
+`git commit --amend -m "Yeni Commit Adı"`
+
+## Revert
+Yaptığımız değişikliği geri almak için kullanabiliriz. Ama yapılan değişikliği de bir adım olarak ekler.
+
+`git revert geri-alacağımız-commit-idsi`
+
+## Reset Hard
+Yaptığımız değişikliği silerek geri almak için kullanılır. Revert çok daha güvenli reset kullanıldığı zaman commitler silinir.
+
+`git reset --hard gitmek-istediğiniz-commit-idsi`
+
+## İki commit arasındaki fark
+İki commit arasındaki farkı görmek için
+
+`git diff birinci-commitid...ikinci-commitid`
+
